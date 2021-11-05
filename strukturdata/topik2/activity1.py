@@ -46,10 +46,15 @@ class Matriks:
     # Diakses menggunakan operator -.
     # Contoh: mtrkC = mtrkA - mtrkB
     def __sub__(self, matriksLain):
-        # Tuliskan kode implementasi Anda di bawah
-        for brs in range(self.bykBaris()):
-            for klm in range(self.bykKolom()):
-                self[brs, klm] -= matriksLain
+        if (matriksLain.bykBaris() != self.bykBaris()) or \
+                (matriksLain.bykKolom() != self.bykKolom()):
+            raise ValueError('Matriks yang dijumlahkan harus berukuran sama.')
+        else:
+            hasil = Matriks(self.bykBaris(), self.bykKolom())
+            for brs in range(self.bykBaris()):
+                for klm in range(self.bykKolom()):
+                    hasil[brs, klm] = self[brs, klm] - matriksLain[brs, klm]
+            return hasil
 
     def __mul__(self, matriksLain):
         pass
