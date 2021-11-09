@@ -70,7 +70,7 @@ _main:
 		call print_string;
 
 
-        mov eax,ebx
+       		mov eax,ebx
 		call print_int;
 		call print_nl;
 
