@@ -52,9 +52,6 @@ class BST:
         return nodeMaximum.data
 
 
-   
-
-
     ###############################
 
     def add(self, data):
