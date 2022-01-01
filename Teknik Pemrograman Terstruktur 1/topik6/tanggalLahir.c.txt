@@ -1,0 +1,33 @@
+// Program tanggal_lahir.c
+#include <stdio.h>
+
+int main()
+{
+    // Deklarasikan struct dengan nama struct dataTanggal
+  struct dataTanggal
+  {
+      // Deklarasikan nama anggota struct tahun, bulan, tanggal bertipe data integer
+    int tahun;
+    int bulan;
+    int tanggal;
+  };
+  
+  // Deklarasikan variabel struct dengan nama variabel tanggalLahir
+  struct dataTanggal tanggalLahir;
+  
+  // Input tanggal, bulan, dan tahun dengan menggunakan struct
+  printf("Masukkan tanggal : ");
+  scanf("%d", &tanggalLahir.tanggal);
+  printf("Masukkan bulan : ");
+  scanf("%d", &tanggalLahir.bulan);
+  printf("Masukkan tahun : ");
+  scanf("%d", &tanggalLahir.tahun);
+  
+  // Mencetak tanggal, bulan dan tahun
+  printf("%d/%d/%d\n", tanggalLahir.tanggal, tanggalLahir.bulan,
+tanggalLahir.tahun);
+  
+  
+  return 0;
+  
+}
