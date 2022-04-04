@@ -26,12 +26,7 @@ public class TarifPengiriman
             harga = 5500;
             result = harga * (int)jarak;
             System.out.printf("Tarif Pengiriman = Rp.%,.2f",result);
-        }
-        
-        
-        
-        
-        
+        }        
         
     }
 }
