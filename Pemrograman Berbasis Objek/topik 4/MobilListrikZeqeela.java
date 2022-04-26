@@ -14,6 +14,7 @@ public class MobilListrik extends Mobil{
     public MobilListrik()
     {
         super();
+        this.lamaRecharge = 0;
     }
 
     public void setLamaRecharge(int kecepatan)
