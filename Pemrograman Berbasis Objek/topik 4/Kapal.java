@@ -1,25 +1,22 @@
-/**
- *
- * @author RizkyBagaskara
- */
 public class Kapal {
     private String nama;
     private int tahunPembuatan;
-    
-    public Kapal(String nama, int tahunPembuatan){
+
+    public Kapal(String nama, int tahunPembuatan) {
         this.nama = nama;
         this.tahunPembuatan = tahunPembuatan;
     }
-    
-    public String getNama(){
+
+    public String getNama() {
         return nama;
     }
-    
-    public int getTahunPembuatan(){
+
+    public int getTahunPembuatan() {
         return tahunPembuatan;
     }
-    
-     public String toString(){
-        return String.format("Nama: %s\nTahun Pembuatan: %d", this.nama, this.tahunPembuatan);
+
+
+    public String toString() {
+        return "Nama: " + nama + "\nTahun Pembuatan: " + tahunPembuatan;
     }
 }

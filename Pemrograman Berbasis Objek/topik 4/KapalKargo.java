@@ -1,28 +1,17 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+public class KapalKargo extends Kapal {
+    private int kapasitasAngkut;
 
-
-/**
- *
- * @author RizkyBagaskara
- */
-public class KapalKargo extends Kapal{
-     private int kapasitasAngkut;
-    
-    public KapalKargo(String nama, int tahunPembuatan, int kapasitasAngkut){
+    public KapalKargo(String nama,int tahunPembuatan, int kapasitasAngkut) {
         super(nama, tahunPembuatan);
         this.kapasitasAngkut = kapasitasAngkut;
     }
-    
-    public int getKapasitasAngkut(){
-        return this.kapasitasAngkut;
+
+    public int getKapasitasAngkut() {
+        return kapasitasAngkut;
     }
-    
+
     @Override
-    public String toString(){
-        return String.format("Nama: %s\nKapasitas Angkut: %d", super.getNama(), this.kapasitasAngkut);
+    public String toString() {
+        return "Nama: "+ super.getNama() + "\nKapasitas Angkut: " + kapasitasAngkut;
     }
 }
