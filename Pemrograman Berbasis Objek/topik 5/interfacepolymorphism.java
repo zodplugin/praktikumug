@@ -9,17 +9,11 @@ public class InterfacePolymorphism
     produk[3] = new DVD("The Raid", 101, 185000);
 
     // Loop untuk mencetak informasi setiap object
-    for (
-int i = 0; i < produk.length ;i++
-)
+    for (int i = 0; i < produk.length ;i++)
     {
        // Cetak Nama Produk
-       System.out.print(
-"Nama: "+produk[i].getNamaProduk()+", "
-);
+       System.out.print("Nama: "+produk[i].getNamaProduk()+", ");
        // Cetak Harga Ritel
-       System.out.printf(
-"Harga: Rp%,.2f \n",produk[i].getHargaRitel()
-);
+       System.out.printf("Harga: Rp%,.2f \n",produk[i].getHargaRitel());
     }    
 }
